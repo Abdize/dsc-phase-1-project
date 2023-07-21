@@ -1,14 +1,17 @@
 # Phase 1 Project
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+* Student name: Abdihakim S Mohamed
+* Student pace: Part Time
+* Scheduled project review date/time:
+* Instructor name: Maryan Mwikali
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+In this project, I will provide recommendations to Microsoft on the types of movies they should produce for the launch of their movie studio. To make these suggestions, I will analyze historical data from IMDB, Box Office Mojo, and The Numbers. Specifically, I will focus on the genre of movies that perform well at the box office and perform well in both Domestic and Foreign market.
+
+Measuring the success of a movie can be done through various metrics, but in this project, I will primarily focus on financial metrics that can be objectively measured, such as movie gross and Genre. By identifying common attributes among the top-grossing movies, we can offer valuable insights on the type of film Microsoft should pursue.
+
+Additionally, I will explore the relationship between genre, ratings, and movie gross.
 
 ### Business Problem
 
@@ -16,7 +19,7 @@ Microsoft sees all the big companies creating original video content and they wa
 
 ### The Data
 
-In the folder `zippedData` are movie datasets from:
+In the folder `zippedData` I used datasets from:
 
 * [Box Office Mojo](https://www.boxofficemojo.com/)
 * [IMDB](https://www.imdb.com/)
@@ -24,42 +27,48 @@ In the folder `zippedData` are movie datasets from:
 * [TheMovieDB](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+From the data above I used the the data below.
 
 * imdb.title.basics
 * imdb.title.ratings
 * bom.movie_gross
 
-## Deliverables
+## Methods
 
-There are three deliverables for this project:
+* I loaded the data using Python modules to read the data.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+* Merging of the data.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+* Reviewed the data to understand inconsistencies.
 
-### Key Points
+* I cleaned the data by dropping duplicate columns for ease understanding.
+  
+* Visualized the data for insights.
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+### Results
+* Bar plot analysis on Domestic gross against genres
+![Barplot_Dom](https://github.com/learn-co-curriculum/dsc-phase-1-project/assets/133906913/fe60dc4a-b3eb-4b9c-9694-db8dccd07b44)
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+* Bar plot analysis on Foreign gross against genres
+![BarPlot_For](https://github.com/learn-co-curriculum/dsc-phase-1-project/assets/133906913/d7c30c4a-e338-4e99-a704-f1ab7ac88f5e)
 
-## Getting Started
+* Movies released per year
+![CountPlot](https://github.com/learn-co-curriculum/dsc-phase-1-project/assets/133906913/adfa2be9-b0f0-4655-b868-ec84613afbcb)
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+* Relationship between ratings and revenue generated
+![ScartterPlot](https://github.com/learn-co-curriculum/dsc-phase-1-project/assets/133906913/b07f2a93-7d13-4040-b13a-0e9591d56da4)
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+## Conclusion
 
-## Project Submission and Review
+* The domestic and foreign gross earnings exhibited different trends, with the foreign gross consistently showing an upward trajectory, while the domestic gross experienced fluctuations.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+* The genre analysis highlighted the strong performance of Action, Adventure, and Sci-Fi genres in both domestic and foreign markets, indicating their popularity and profitability. These genres are promising investment options for Microsoft Studio in its movie production ventures.
 
-## Summary
+## Reccomendation
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+* Genres like Action, Adventure, and Sci-Fi perform in both domestic and international markets, Microsoft Studio should prioritize investments in producing more movies within these genres to optimize revenue generation.
+  
+* As foreign gross earnings demonstrate a consistent upward trend, Microsoft should continue to target and expand its presence in international markets.
+
